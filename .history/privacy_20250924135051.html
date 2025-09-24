@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - game36.indianewjobs.in</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Orbitron:wght@400;700&display=swap"
+    rel="stylesheet">
+  <style>
+    :root {
+      --primary-dark: #1a0033;
+      --primary-medium: #946cbd;
+      --primary-light: #bf9fdf;
+      --accent-gold: #cfc59b;
+      --accent-light: #d3cca7;
+      --text-light: #f0e6ff;
+      --text-dark: #1a0033;
+      --shadow-dark: rgba(0, 0, 0, 0.5);
+      --shadow-light: rgba(255, 204, 0, 0.3);
+    }
+
+    body {
+      background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-medium) 100%);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      overflow-x: hidden;
+      color: var(--text-light);
+    }
+
+    .page-wrapper {
+      width: 100%;
+      max-width: 425px;
+      margin: 0 auto;
+      background: linear-gradient(180deg, #131214 0%, #171618 100%);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      box-shadow: 0 0 40px var(--shadow-dark);
+      border-left: 1px solid var(--accent-gold);
+      border-right: 1px solid var(--accent-gold);
+    }
+
+    .header {
+      background: rgba(26, 0, 51, 0.95);
+      backdrop-filter: blur(15px);
+      width: 100%;
+      padding: 1rem 0;
+      box-shadow: 0 5px 25px var(--shadow-dark);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      display: flex;
+      justify-content: center;
+      border-bottom: 3px solid var(--accent-gold);
+    }
+
+    .header-content {
+      width: 100%;
+      max-width: 425px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 1.5rem;
+    }
+
+    .logo {
+      font-size: 1.75rem;
+      font-weight: 900;
+      color: var(--accent-gold);
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      text-shadow: 0 2px 10px var(--shadow-light);
+      transition: all 0.3s ease;
+      font-family: 'Orbitron', sans-serif;
+    }
+
+    .logo:hover {
+      color: var(--accent-light);
+      text-shadow: 0 4px 20px var(--shadow-light);
+    }
+
+    .back-btn {
+      font-size: 1.2rem;
+      color: var(--accent-gold);
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .back-btn:hover {
+      color: var(--accent-light);
+      transform: translateX(-3px);
+    }
+
+    #banner-ad {
+      width: 100%;
+      max-width: 425px;
+      margin: 0.5rem auto;
+      padding: 0.5rem;
+      background: rgba(51, 0, 102, 0.7);
+      box-shadow: 0 4px 15px var(--shadow-dark);
+      border-radius: 8px;
+      position: relative;
+      text-align: center;
+      border: 1px solid var(--accent-gold);
+    }
+
+    #banner-ad::before {
+      content: "Advertisement";
+      position: absolute;
+      top: 2px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 0.7rem;
+      font-weight: 500;
+      color: var(--accent-gold);
+      background: var(--primary-dark);
+      padding: 0 8px;
+      border-radius: 4px;
+      border: 1px solid var(--accent-gold);
+    }
+
+    .privacy-hero {
+      width: 100%;
+      max-width: 425px;
+      padding: 1.5rem;
+      text-align: center;
+      background: rgba(26, 0, 51, 0.8);
+      border-bottom: 2px solid var(--accent-gold);
+    }
+
+    .hero-title {
+      font-size: 2rem;
+      font-weight: 900;
+      color: var(--accent-gold);
+      margin-bottom: 1rem;
+      text-shadow: 0 3px 15px var(--shadow-light);
+      letter-spacing: 1.5px;
+      font-family: 'Orbitron', sans-serif;
+    }
+
+    .privacy-section {
+      width: 100%;
+      max-width: 425px;
+      padding: 1.5rem;
+    }
+
+    .section-title {
+      font-size: 1.5rem;
+      font-weight: 900;
+      color: var(--accent-gold);
+      margin-bottom: 1rem;
+      text-shadow: 0 2px 10px var(--shadow-light);
+      font-family: 'Orbitron', sans-serif;
+    }
+
+    .section-text {
+      font-size: 0.95rem;
+      color: var(--text-light);
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+    }
+
+    .privacy-section ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    .privacy-section li {
+      margin-bottom: 0.8rem;
+      padding-left: 1.5rem;
+      position: relative;
+    }
+
+    .privacy-section li::before {
+      content: "•";
+      color: var(--accent-gold);
+      font-size: 1.2rem;
+      position: absolute;
+      left: 0;
+      top: -2px;
+    }
+
+    .contact-section {
+      width: 100%;
+      max-width: 425px;
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    .contact-text {
+      font-size: 1rem;
+      color: var(--text-light);
+      margin-bottom: 1rem;
+    }
+
+    .contact-email {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--accent-gold);
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .contact-email:hover {
+      color: var(--accent-light);
+      text-shadow: 0 0 10px var(--shadow-light);
+    }
+
+    .footer-links {
+      width: 100%;
+      text-align: center;
+      padding: 1.5rem 0;
+      border-top: 2px solid var(--accent-gold);
+      margin-top: auto;
+      background: rgba(26, 0, 51, 0.95);
+    }
+
+    .footer-links a {
+      color: var(--accent-gold);
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 0.95rem;
+      transition: all 0.3s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-weight: 700;
+      font-family: 'Orbitron', sans-serif;
+    }
+
+    .footer-links a:hover {
+      color: var(--accent-light);
+      transform: translateY(-3px);
+      text-shadow: 0 0 10px var(--shadow-light);
+    }
+
+    .footer-links a i {
+      font-size: 1.1rem;
+    }
+  </style>
+</head>
+
+<body oncontextmenu="return false" onkeydown="return disableKeys(event)" onselectstart="return false">
+  <!-- Copyright Notice -->
+  <script>
+    console.log("© 2025 game36.indianewjobs.in. All rights reserved.");
+  </script>
+
+  <div class="page-wrapper">
+    <!-- Header -->
+    <header class="header">
+      <div class="header-content">
+        <a href="javascript:history.back()" class="back-btn"><i class="fas fa-arrow-left"></i></a>
+        <a href="game.html" class="logo">
+          game36.indianewjobs.in
+        </a>
+        <div style="width: 24px;"></div> <!-- Spacer for alignment -->
+      </div>
+    </header>
+
+    <!-- Banner Ad -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2975369621338818"
+     crossorigin="anonymous"></script>
+<!-- d7 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2975369621338818"
+     data-ad-slot="6830065714"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+    <!-- Hero Section -->
+    <div class="privacy-hero">
+      <h1 class="hero-title">Privacy Policy</h1>
+    </div>
+
+    <!-- Privacy Policy Section -->
+    <div class="privacy-section">
+      <h2 class="section-title">Introduction</h2>
+      <p class="section-text">
+        At game36.indianewjobs.in, we are committed to protecting your privacy. This Privacy Policy explains how we collect, use,
+        disclose, and safeguard your information when you use our premium gaming platform. Please read this policy
+        carefully. If you do not agree with the terms of this privacy policy, please do not access the platform.
+      </p>
+
+      <h2 class="section-title">Information We Collect</h2>
+      <p class="section-text">
+        We may collect the following types of information when you use our platform:
+      </p>
+      <ul>
+        <li><strong>Personal Information:</strong> Name, email address, and other contact details you provide when
+          creating an account or contacting support.</li>
+        <li><strong>Gameplay Data:</strong> Information about your gaming activity, including scores, achievements, and
+          in-game purchases.</li>
+        <li><strong>Device Information:</strong> Technical details about your device, including IP address, browser
+          type, and operating system.</li>
+        <li><strong>Tournament Data:</strong> Information related to your participation in competitive events.</li>
+      </ul>
+
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2975369621338818"
+     crossorigin="anonymous"></script>
+<!-- d7 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2975369621338818"
+     data-ad-slot="6830065714"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+      <h2 class="section-title">How We Use Your Information</h2>
+      <p class="section-text">
+        We use the information we collect for the following purposes:
+      </p>
+      <ul>
+        <li>To provide and maintain our premium gaming services</li>
+        <li>To personalize your gaming experience and recommend content</li>
+        <li>To facilitate tournament participation and leaderboards</li>
+        <li>To communicate with you about platform updates and promotions</li>
+        <li>To improve platform security and prevent fraud</li>
+        <li>To comply with legal obligations</li>
+      </ul>
+
+      <h2 class="section-title">Sharing Your Information</h2>
+      <p class="section-text">
+        We do not sell your personal information. However, we may share your information with:
+      </p>
+      <ul>
+        <li><strong>Game Developers:</strong> To support game operations and tournament features</li>
+        <li><strong>Payment Processors:</strong> To facilitate in-game purchases and prize distributions</li>
+        <li><strong>Analytics Providers:</strong> To help us understand platform usage patterns</li>
+        <li><strong>Legal Authorities:</strong> When required by law or to protect our rights</li>
+      </ul>
+
+      <h2 class="section-title">Your Rights</h2>
+      <p class="section-text">
+        Depending on your location, you may have the following rights regarding your personal information:
+      </p>
+      <ul>
+        <li>Access, correct, or delete your personal data</li>
+        <li>Opt-out of marketing communications</li>
+        <li>Request a copy of the data we have about you</li>
+        <li>Restrict or object to certain data processing</li>
+      </ul>
+      <p class="section-text">
+        To exercise these rights, please contact us at the email address provided below.
+      </p>
+
+      <h2 class="section-title">Data Security</h2>
+      <p class="section-text">
+        We implement industry-standard security measures including encryption, access controls, and regular security
+        audits to protect your information. However, no method of transmission over the internet is 100% secure, and we
+        cannot guarantee absolute security.
+      </p>
+
+      <h2 class="section-title">Changes to This Policy</h2>
+      <p class="section-text">
+        We may update this Privacy Policy periodically. Any changes will be posted on this page with an updated
+        effective date. We encourage you to review this policy regularly.
+      </p>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="contact-section">
+      <h2 class="section-title">Contact Us</h2>
+      <p class="contact-text">If you have any questions about this Privacy Policy, please contact our support team.</p>
+      <a href="mailto:privacy@elitearcadehub.com" class="contact-email">privacy@elitearcadehub.com</a>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer-links">
+      <a href="game.html"><i class="fas fa-gamepad"></i> Games</a>
+      <a href="tournaments.html"><i class="fas fa-trophy"></i> Tournaments</a>
+      <a href="support.html"><i class="fas fa-headset"></i> Support</a>
+      <a href="privacy.html"><i class="fas fa-shield-alt"></i> Privacy</a>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Disable right-click
+    document.addEventListener('contextmenu', function (e) {
+      e.preventDefault();
+      alert('Right-click is disabled to protect our content.');
+    });
+
+    // Disable keyboard shortcuts (Ctrl+U, Ctrl+Shift+I, F12, etc.)
+    function disableKeys(e) {
+      if (
+        (e.ctrlKey && (e.key === 'u' || e.key === 's' || e.key === 'c' || e.key === 'i' || e.key === 'j')) ||
+        e.key === 'F12' ||
+        (e.metaKey && e.altKey && e.key === 'i')
+      ) {
+        e.preventDefault();
+        alert('Access to developer tools and source code is disabled to protect our content.');
+        return false;
+      }
+      return true;
+    }
+
+    // Disable text selection
+    document.addEventListener('selectstart', function (e) {
+      e.preventDefault();
+    });
+
+    // Disable drag and drop
+    document.addEventListener('dragstart', function (e) {
+      e.preventDefault();
+    });
+  </script>
+</body>
+
+</html>
